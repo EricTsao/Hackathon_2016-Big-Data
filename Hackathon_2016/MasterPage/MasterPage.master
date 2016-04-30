@@ -99,40 +99,79 @@
 		 		<div class="col-lg-4">
 		 			<h4>關於</h4>
 		 			<div class="hline-w"></div>
-		 			<p>我們是致力於 Big Data 挑戰與解決問題的一群人</p>
+		 			<p>好寶寶Big Data 挑戰隊<br />我們是致力於 Big Data 挑戰與解決問題的一群人</p>
 		 		</div>
 		 		<div class="col-lg-8">
 		 			<h4>我們的團隊</h4>
 		 			<div class="hline-w"></div>
-		 			<p>
-		 				Eric.Tsao : eric.tsao.jr@gmail.com
+                     <%--============ 001. _ Start ============--%>
+                     <div class="row">
+		 		         <div class="col-lg-2">
+                              <p>Eric.Tsao</p>
+                         </div>
+                         <div class="col-lg-4">
+                              <p>eric.tsao.jr@gmail.com</p>
+                         </div>
+                         <div class="col-lg-6">
                              <a href="#"><i class="fa fa-dribbble"></i></a>
                              <a href="#"><i class="fa fa-facebook"></i></a>
                              <a href="#"><i class="fa fa-twitter"></i></a>
                              <a href="#"><i class="fa fa-instagram"></i></a>
                              <a href="#"><i class="fa fa-tumblr"></i></a>
-                         <br />
-		 				Andy.Hsu : hamowe527@gmail.com
+                         </div>
+                    </div>
+                    <%--============ 001. _ End ============--%>
+                    <%--============ 002. _ Start ============--%>
+                     <div class="row">
+		 		         <div class="col-lg-2">
+                              <p>Andy.Hsu</p>
+                         </div>
+                         <div class="col-lg-4">
+                              <p>hamowe527@gmail.com</p>
+                         </div>
+                         <div class="col-lg-6">
                              <a href="#"><i class="fa fa-dribbble"></i></a>
                              <a href="#"><i class="fa fa-facebook"></i></a>
                              <a href="#"><i class="fa fa-twitter"></i></a>
                              <a href="#"><i class="fa fa-instagram"></i></a>
                              <a href="#"><i class="fa fa-tumblr"></i></a>
-                         <br />
-		 				Eric.Lin : siantingtaiwan@gmail.com
+                         </div>
+                    </div>
+                    <%--============ 002. _ End ============--%>
+                    <%--============ 003. _ Start ============--%>
+                     <div class="row">
+		 		         <div class="col-lg-2">
+                              <p>Eric.Lin</p>
+                         </div>
+                         <div class="col-lg-4">
+                              <p>siantingtaiwan@gmail.com</p>
+                         </div>
+                         <div class="col-lg-6">
                              <a href="#"><i class="fa fa-dribbble"></i></a>
                              <a href="#"><i class="fa fa-facebook"></i></a>
                              <a href="#"><i class="fa fa-twitter"></i></a>
                              <a href="#"><i class="fa fa-instagram"></i></a>
                              <a href="#"><i class="fa fa-tumblr"></i></a>
-                         <br />
-		 				Ming Yao: johnny.my.chang@gmail.com
+                         </div>
+                    </div>
+                    <%--============ 003. _ End ============--%>
+                    <%--============ 004. _ Start ============--%>
+                     <div class="row">
+		 		         <div class="col-lg-2">
+                              <p>Ming Yao</p>
+                         </div>
+                         <div class="col-lg-4">
+                              <p>johnny.my.chang@gmail.com</p>
+                         </div>
+                         <div class="col-lg-6">
                              <a href="#"><i class="fa fa-dribbble"></i></a>
                              <a href="#"><i class="fa fa-facebook"></i></a>
                              <a href="#"><i class="fa fa-twitter"></i></a>
                              <a href="#"><i class="fa fa-instagram"></i></a>
                              <a href="#"><i class="fa fa-tumblr"></i></a>
-		 			</p>
+                         </div>
+                    </div>
+                    <%--============ 004. _ End ============--%>
 		 		</div>
 		 	</div><! --/row -->
 	 	</div><! --/container -->
