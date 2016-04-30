@@ -10,10 +10,10 @@ public class GetMapPointData : IHttpHandler {
 
         var mapObjList = new List<mapobj>();
 
-        var taipeiWest = new mapobj() { Longtitude = (float)25.10913, Latitude = (float)121.457128 };
-        var taipeiEast = new mapobj() { Longtitude = (float)25.025986, Latitude = (float)121.665187 };
-        var taipeiNorth = new mapobj() { Longtitude = (float)25.210126, Latitude = (float)121.559439 };
-        var taipeiSouth = new mapobj() { Longtitude = (float)24.960519, Latitude = (float)121.597140 };
+        var taipeiWest = new mapobj() { Latitude = (float)25.10913, Longtitude = (float)121.457128 };
+        var taipeiEast = new mapobj() { Latitude = (float)25.025986, Longtitude = (float)121.665187 };
+        var taipeiNorth = new mapobj() { Latitude = (float)25.210126, Longtitude = (float)121.559439 };
+        var taipeiSouth = new mapobj() { Latitude = (float)24.960519, Longtitude = (float)121.597140 };
 
         // mapObjList.Add(taipeiEast);
 
