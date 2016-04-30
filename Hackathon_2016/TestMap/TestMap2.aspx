@@ -53,6 +53,19 @@
              return edgePointArray;
          }
 
+         window.createMatrix = function (westlongtitude, southlatitude, eastlongtitude, northtitude) {
+
+             var bbox = [westlongtitude, southlatitude, eastlongtitude, northtitude];
+             var data = turf.bboxPolygon(bbox);
+             var center = turf.center(data);
+             map.setCenter({ lng: center.geometry.coordinates[0], lat: center.geometry.coordinates[1] });
+
+             // 載入 GeoJSON 資料
+             //map.data.addGeoJson(squareGrid); //這邊劃格線
+             map.data.addGeoJson(data);   // 這邊畫好範圍
+
+         };
+
         $(document).ready(function(){
         
                        initMap();
@@ -68,15 +81,19 @@
 
                                 var List = createedgePoint(result[3], result[1], result[2], result[0]);
 
-                                var bbox = [ result[0].Longtitude, result[1].Latitude,result[2].Longtitude, result[3].Latitude ];
+                                //var bbox = [ result[0].Longtitude, result[1].Latitude,result[2].Longtitude, result[3].Latitude ];
 
-                                var data = turf.bboxPolygon(bbox);
-                                var center = turf.center(data);
-                                map.setCenter({ lng: center.geometry.coordinates[0], lat: center.geometry.coordinates[1] });
+                                //var data = turf.bboxPolygon(bbox);
+                                //var center = turf.center(data);
+                                //map.setCenter({ lng: center.geometry.coordinates[0], lat: center.geometry.coordinates[1] });
 
-                                    // 載入 GeoJSON 資料
-                                   //map.data.addGeoJson(squareGrid); //這邊劃格線
-                                map.data.addGeoJson(data);   // 這邊畫好範圍
+                                //    // 載入 GeoJSON 資料
+                                //   //map.data.addGeoJson(squareGrid); //這邊劃格線
+                                //map.data.addGeoJson(data);   // 這邊畫好範圍
+
+                                createMatrix(result[0].Longtitude, result[1].Latitude, result[2].Longtitude, result[3].Latitude);
+
+
 
                                 //劃入點
                                 dataMap.setMap(null);
