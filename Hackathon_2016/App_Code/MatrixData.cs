@@ -38,8 +38,8 @@ public class MatrixData
         FROM [MatrixDataCount]
         WHERE 1=1
         AND [QueryTime] BETWEEN @StartTime AND @EndTime
-        AND [Longitude] BEWEEN @LeftLng AND @RightLng
-        AND [Latitude] BEWEEN @TopLat AND @BottomLat ";
+        AND [Longitude] BETWEEN @LeftLng AND @RightLng
+        AND [Latitude] BETWEEN @BottomLat AND @TopLat ";
 
             sqlCmd.Parameters.AddWithValue("StartTime", startTime);
             sqlCmd.Parameters.AddWithValue("EndTime", endTime);

@@ -20,7 +20,7 @@ public class GetMatrixDataCount : IHttpHandler {
         DateTime endTime = String.IsNullOrEmpty(endTimeStr) ? DateTime.Now.AddDays(1)//set to future date for no end time
             : Convert.ToDateTime(endTimeStr);
 
-        List < MatrixData> matrixDataList = MatrixData.GetGroupedMatrixData(bounds, startTime, endTime, xDivide, yDivide);
+        List <MatrixData> matrixDataList = MatrixData.GetGroupedMatrixData(bounds, startTime, endTime, xDivide, yDivide);
         
         context.Response.ContentType = "text/plain";
         context.Response.Write(JsonConvert.SerializeObject(matrixDataList));
