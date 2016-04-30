@@ -1,0 +1,8 @@
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\bin\Debug\GetDataRobot.exe.config
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\obj\Debug\GetDataRobot.csprojResolveAssemblyReference.cache
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\bin\Debug\GetDataRobot.exe
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\bin\Debug\GetDataRobot.pdb
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\bin\Debug\Newtonsoft.Json.dll
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\bin\Debug\Newtonsoft.Json.xml
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\obj\Debug\GetDataRobot.exe
+D:\02. Code\GitHub\Hackathon_2016-Big-Data\GetDataRobot\obj\Debug\GetDataRobot.pdb
