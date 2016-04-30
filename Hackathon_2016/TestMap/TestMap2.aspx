@@ -29,10 +29,10 @@
          window.createedgePoint = function ( North, South, East, West) {
 
              var edgePointArray = [];
-             var Northaxis = North.Longtitude;
-             var Southaxis = South.Longtitude;
-             var Eastaxis = East.Latitude;
-             var Westaxis = West.Latitude;
+             var Northaxis = North.Latitude;
+             var Southaxis = South.Latitude;
+             var Eastaxis = East.Longtitude;
+             var Westaxis = West.Longtitude;
 
              var Lefttoppoint = { lng: Westaxis, lat:Northaxis };
              var Leftbotpoint = { lng: Westaxis, lat:Southaxis };
@@ -68,7 +68,7 @@
 
                                 var List = createedgePoint(result[3], result[1], result[2], result[0]);
 
-                                var bbox = [ result[0].Latitude, result[1].Longtitude,result[2].Latitude, result[3].Longtitude ];
+                                var bbox = [ result[0].Longtitude, result[1].Latitude,result[2].Longtitude, result[3].Latitude ];
 
                                 var data = turf.bboxPolygon(bbox);
                                 var center = turf.center(data);
@@ -84,7 +84,7 @@
 
                                 for(var i = 0; i<result.length;i++){
 
-                                    var turfPoint = turf.point([result[i].Latitude, result[i].Longtitude]);
+                                    var turfPoint = turf.point([result[i].Longtitude, result[i].Latitude]);
                                     var buffered = turf.buffer(turfPoint, 3, "kilometers");
 
                                     dataMap.addGeoJson(buffered);
