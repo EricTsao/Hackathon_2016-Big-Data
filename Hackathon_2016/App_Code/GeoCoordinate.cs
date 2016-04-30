@@ -13,7 +13,7 @@ public class GeoCoordinate
 
     public GeoCoordinate(double lng, double lat)
     {
-        this.Lng = lng;
-        this.Lat = lat;
+        this.lng = lng;
+        this.lat = lat;
     }
 }

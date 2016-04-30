@@ -21,6 +21,6 @@ public class ConnObj
 }
 public class MyConnStringList
 {
-    public static string Hackathon2016 = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
+    public static string Hackathon2016 = ConfigurationManager.ConnectionStrings["ConnHackathon2016"].ConnectionString;
 
 }

@@ -18,9 +18,9 @@
                 var leftLng = pointInfo.point.lng + HackMap.MatrixInfo.maxRadius;
                 var rightLng = pointInfo.point.lng - HackMap.MatrixInfo.maxRadius;
 
+                bounds.push({ lat: topLat, lng: rightLng });
                 bounds.push({ lat: topLat, lng: leftLng });
                 bounds.push({ lat: bottomLat, lng: leftLng });
-                bounds.push({ lat: topLat, lng: rightLng });
                 bounds.push({ lat: bottomLat, lng: rightLng });
 
                 return bounds;
@@ -37,8 +37,8 @@
 
 
                 return pointDataList.filter(function (item, index, array) {
-                    return bounds[0].lat >= item.point.lat && bounds[1].lat <= item.point.lat
-                        && bounds[0].lng >= item.point.lng && bounds[3].lng >= item.point.lng;
+                    return bounds[0].lat >= item.point.lat && bounds[2].lat <= item.point.lat
+                        && bounds[0].lng >= item.point.lng && bounds[2].lng <= item.point.lng;
                 });
             };
 

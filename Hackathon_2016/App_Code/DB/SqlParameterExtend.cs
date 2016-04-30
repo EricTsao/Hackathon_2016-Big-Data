@@ -7,7 +7,7 @@ using System.Web;
 /// <summary>
 /// Summary description for SqlParameterExtend
 /// </summary>
-public class SqlParameterExtend
+public static class SqlParameterExtend
 {
     /// <summary>
     /// Allow insert null value

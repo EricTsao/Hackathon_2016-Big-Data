@@ -34,21 +34,24 @@ public class MatrixData
             sqlCmd.CommandText = @"
                 SELECT [Longitude]
               ,[Latitude]
-              ,[Difference_Count]
+              ,MAX([Count])
+               -MIN([Count]) AS Difference_Count
         FROM [MatrixDataCount]
         WHERE 1=1
         AND [QueryTime] BETWEEN @StartTime AND @EndTime
         AND [Longitude] BETWEEN @LeftLng AND @RightLng
-        AND [Latitude] BETWEEN @BottomLat AND @TopLat ";
+        AND [Latitude] BETWEEN @BottomLat AND @TopLat 
+        GROUP BY [Longitude],[Latitude]";
 
             sqlCmd.Parameters.AddWithValue("StartTime", startTime);
             sqlCmd.Parameters.AddWithValue("EndTime", endTime);
             sqlCmd.Parameters.AddWithValue("TopLat", bounds[0].lat);
-            sqlCmd.Parameters.AddWithValue("BottomLat", bounds[1].lat);
-            sqlCmd.Parameters.AddWithValue("LeftLng", bounds[0].lng);
-            sqlCmd.Parameters.AddWithValue("RightLng", bounds[3].lng);
+            sqlCmd.Parameters.AddWithValue("BottomLat", bounds[2].lat);
+            sqlCmd.Parameters.AddWithValue("RightLng", bounds[0].lng);
+            sqlCmd.Parameters.AddWithValue("LeftLng", bounds[2].lng);
 
             conn.Open();
+
             using (var reader = sqlCmd.ExecuteReader())
             {
                 if (reader.HasRows)
