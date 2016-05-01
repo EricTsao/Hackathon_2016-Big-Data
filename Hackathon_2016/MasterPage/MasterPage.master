@@ -14,6 +14,8 @@
 
     <title>好寶寶Big Data 挑戰隊</title>
 
+    <link href="<%=ConfigurationManager.AppSettings["Url"] %>Public/Script/jQueryUI/jquery-ui-1.9.2.custom.css" rel="stylesheet"
+        type="text/css" />
     <!-- Bootstrap core CSS -->
     <link href="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/css/bootstrap.css" rel="stylesheet">
 
@@ -39,7 +41,8 @@
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
     <%--turf - End--%>
-
+       <script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Script/jquery-1.9.1.min.js"></script>
+    <script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Script/jQueryUI/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
 
     <asp:ContentPlaceHolder id="head" runat="server">
 
@@ -59,7 +62,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">好寶寶Big Data 挑戰隊</a>
+          <a class="navbar-brand" href="index.html">大台北觀察家<span id="CurrentTime" style="padding-left:10px;"></span></a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -141,7 +144,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/js/bootstrap.min.js"></script>
 	<script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/js/retina-1.1.0.js"></script>
 	<script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/js/jquery.hoverdir.js"></script>
@@ -149,7 +152,6 @@
 	<script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/js/jquery.prettyPhoto.js"></script>
   	<script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/js/jquery.isotope.min.js"></script>
   	<script src="<%=ConfigurationManager.AppSettings["Url"] %>Public/Theme/Solid_Theme/assets/js/custom.js"></script>
-
 
     <script>
         // Portfolio
